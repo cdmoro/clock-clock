@@ -1,0 +1,17 @@
+[data-theme|='bohemian'] {
+  --clock-font-family: 'Comfortaa', sans-serif;
+  --clock-line-height: 1.2;
+  --accent-color: #1abc9c;
+}
+
+[data-theme|='bohemian'][data-clock-type="flex"] {
+  --clock-line-height: 1;
+}
+
+[data-theme='bohemian-light'] {
+  --background: #fef9e7;
+}
+
+[data-theme='bohemian-dark'] {
+  --background: #1a1a1a;
+}

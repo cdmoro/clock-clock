@@ -1,0 +1,32 @@
+body.mini #clock {
+  grid-template-columns: repeat(var(--columns, 11), 1fr);
+}
+
+body.mini .char:not(.active) {
+  display: none;
+}
+
+body.mini .char.first {
+  grid-column: 1;
+}
+
+body.mini .char.idle {
+  display: initial;
+}
+
+body.mini #flex-clock {
+  width: unset;
+}
+
+body.mini #flex-clock .row {
+  flex-direction: column;
+  gap: .5rem;
+}
+
+body.mini #flex-clock .row .word:not(.active) {
+  display: none;
+}
+
+body.mini #flex-clock .row:not(:has(.active)) {
+  display: none;
+}

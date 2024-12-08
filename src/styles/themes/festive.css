@@ -1,0 +1,19 @@
+[data-theme|='festive'] {
+  --clock-font-family: 'Leckerli One', sans-serif;
+  --clock-line-height: 1;
+  --accent-color: #e74c3c;
+}
+
+[data-theme|='festive'][lang='ar'] {
+  --clock-font-family: 'Marhey', sans-serif;
+}
+
+[data-theme='festive-light'] {
+  --background: #fad0c4;
+  --background-image: linear-gradient(to top right, var(--background) 0%, #ffd1ff 100%);
+}
+
+[data-theme='festive-dark'] {
+  --background: #011b1b;
+  --background-image: linear-gradient(to top right, var(--background) 0%, #43162c 100%);
+}

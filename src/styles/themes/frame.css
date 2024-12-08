@@ -1,0 +1,30 @@
+[data-theme|='frame'] {
+  --clock-font-family: 'Playfair Display', sans-serif;
+  --clock-line-height: 1.2;
+}
+
+[data-theme|='frame'][data-clock-type="flex"] {
+  --clock-line-height: 1;
+}
+
+[data-theme|='frame'] #clock,
+[data-theme|='frame'] #flex-clock,
+[data-theme|='frame'] #fuzzy-clock {
+  border-radius: 1rem;
+  border: 2px solid var(--accent-color);
+}
+
+[data-theme|='frame'] #flex-clock {
+  padding: 1rem 1.5rem;
+}
+
+[data-theme='frame-light'] {
+  --background: #cefcff;
+  --accent-color: #00b9c4;
+}
+
+[data-theme='frame-dark'] {
+  --background: #001c1e;
+  --font-color: #f7f7f7;
+  --accent-color: #00c4ce;
+}

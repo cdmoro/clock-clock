@@ -1,0 +1,26 @@
+@import url(main.css);
+
+@import url(modules/focus.css);
+@import url(modules/fuzzy.css);
+@import url(modules/solid.css);
+@import url(modules/mini.css);
+@import url(modules/flex.css);
+
+@import url(themes/base.css);
+@import url(themes/bohemian.css);
+@import url(themes/colors.css);
+@import url(themes/crossword.css);
+@import url(themes/dots.css);
+@import url(themes/elegant.css);
+@import url(themes/festive.css);
+@import url(themes/frame.css);
+@import url(themes/handwriting.css);
+@import url(themes/kindle.css);
+@import url(themes/marker.css);
+@import url(themes/numbers.css);
+@import url(themes/photo.css);
+@import url(themes/poster.css);
+@import url(themes/rainbow.css);
+@import url(themes/retro.css);
+@import url(themes/terminal.css);
+@import url(themes/x.css);

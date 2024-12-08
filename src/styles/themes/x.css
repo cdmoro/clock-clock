@@ -1,0 +1,29 @@
+[data-theme|='x'] {
+    --clock-font-family: 'JetBrains Mono', sans-serif;
+}
+
+[data-theme|='x'] .char,
+[data-theme|='x'] .word {
+  position: relative;
+}
+
+[data-theme|='x'] .char:not(.active):before {
+  content: "✕";
+  font-weight: bold;
+  position: absolute;
+  font-size: 2.5vw;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+[data-theme|='x'] .word:not(.active):before {
+  content: " ";
+  height: 2px;
+  background: color-mix(in srgb, var(--font-color), transparent 80%);
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+}

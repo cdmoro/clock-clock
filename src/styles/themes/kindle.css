@@ -1,0 +1,16 @@
+[data-theme|='kindle'] {
+  --clock-font-family: 'Noto Serif', sans-serif;
+  --clock-line-height: 1;
+}
+
+[data-theme='kindle-light'] {
+  --background: #dcd8d0;
+  --font-color: #646862;
+  --accent-color: #2C2C2E;
+}
+
+[data-theme='kindle-dark'] {
+  --background: #161920;
+  --font-color: #808187;
+  --accent-color: #dcd8d0;
+}

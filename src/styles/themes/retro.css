@@ -1,0 +1,63 @@
+[data-theme|='retro'] {
+  --clock-font-family: 'VT323', sans-serif;
+  --clock-line-height: 1;
+}
+
+[data-theme|='retro'][lang='ja'] {
+  --clock-font-family: 'DotGothic16', sans-serif;
+}
+
+[data-theme|='retro'][lang='ar'] {
+  --clock-font-family: 'Handjet', sans-serif;
+}
+
+[data-theme|='retro'] #fuzzy-clock {
+  text-shadow: none;
+}
+
+[data-theme|='retro'] .char.active,
+[data-theme|='retro'] #flex-clock .row .word.active {
+  background: var(--accent-color);
+  color: #000;
+}
+
+[data-theme|='retro'] .char.first {
+  border-start-start-radius: .5rem;
+  border-end-start-radius: .5rem;
+}
+
+[data-theme|='retro'] .char.last {
+  border-start-end-radius: .5rem;
+  border-end-end-radius: .5rem;
+}
+
+[data-theme|='retro'] #flex-clock .row .word.active {
+  border-radius: .5rem;
+  padding: .5vw 1.5vw;
+}
+
+[data-theme|='retro'] body.focus .char.secondary.active {
+  color: color-mix(in srgb, #000, transparent 60%);
+  background-color: color-mix(in srgb, var(--accent-color), transparent 50%);
+}
+
+[data-theme|='retro'] body.fuzzy #fuzzy-clock {
+  background-color: var(--accent-color);
+  color: #000;
+}
+
+[data-theme|='retro'] body.fuzzy.focus #fuzzy-clock .secondary {
+  color: #0007;
+}
+
+[data-theme='retro-light'] {
+  --accent-color: #daa908;
+  --background: #f8f8f8;
+  --background-image: url('/assets/scanlines-bg-light.jpg');
+}
+
+[data-theme='retro-dark'] {
+  --accent-color: #f1ba08;
+  --background: #2c2c2c;
+  --background-image: url('/assets/scanlines-bg-dark.jpg');
+}

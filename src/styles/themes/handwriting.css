@@ -1,0 +1,48 @@
+[data-theme|='handwriting'] {
+  --clock-font-family: 'Mynerve', sans-serif;
+  --clock-line-height: 1;
+  --accent-color: #077fc6;
+}
+
+[data-theme|='handwriting'][lang='zh'] {
+  --clock-font-family: 'LXGW WenKai Mono TC', sans-serif;
+}
+
+[data-theme|='handwriting'][lang='ja'] {
+  --clock-font-family: 'Yuji Boku', sans-serif;
+}
+
+[data-theme|='handwriting'][lang='ar'] {
+  --clock-font-family: 'Amiri', sans-serif;
+}
+
+[data-theme|='handwriting'] #fuzzy-clock {
+  text-shadow: none;
+}
+
+[data-theme|='handwriting'] .char,
+[data-theme|='handwriting'] .row,
+[data-theme|='handwriting'] .fuzzy-wrapper {
+  border-bottom: solid 1px color-mix(in srgb, var(--font-color), transparent 75%);
+}
+
+[data-theme|='handwriting'] .fuzzy-wrapper {
+  padding: .5rem 1rem;
+}
+
+[data-theme='handwriting-light'] {
+  --background: #fef9e7;
+}
+
+[data-theme='handwriting-dark'] {
+  --background: #111111;
+}
+
+[data-theme|='handwriting'] body.mini .row {
+  border-bottom: none;
+}
+
+[data-theme|='handwriting'] body.mini .row .word {
+  border-bottom: solid 1px color-mix(in srgb, var(--font-color), transparent 75%);
+  flex: 1;
+}
