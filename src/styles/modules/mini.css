@@ -1,7 +1,3 @@
-body.mini #clock {
-  grid-template-columns: repeat(var(--columns, 11), 1fr);
-}
-
 body.mini .char:not(.active) {
   display: none;
 }

@@ -1,11 +1,5 @@
 @import url(main.css);
 
-@import url(modules/focus.css);
-@import url(modules/fuzzy.css);
-@import url(modules/solid.css);
-@import url(modules/mini.css);
-@import url(modules/flex.css);
-
 @import url(themes/base.css);
 @import url(themes/bohemian.css);
 @import url(themes/colors.css);

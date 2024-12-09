@@ -8,12 +8,6 @@
   --purple: #a033b3;
 }
 
-[data-theme|='rainbow'] #clock {
-  row-gap: 0;
-  column-gap: 0;
-  padding: 0;
-}
-
 [data-theme|='rainbow'] .char {
   width: 2.5vw;
   height: 2.5vw;

@@ -1,7 +1,3 @@
-[data-theme|='marker'] #clock .char {
-    position: relative;
-}
-
 [data-theme|='marker'] #flex-clock .row {
     gap: 0;
 }
@@ -25,17 +21,4 @@
 
 [data-theme='marker-dark'] body.focus {
     --marker-color: #333;
-}
-
-[data-theme|='marker'] #clock .char:not(.active):after,
-[data-theme|='marker'] #flex-clock .word:not(.active):after {
-    content: " ";
-    position: absolute;
-    left: -1px;
-    right: 0px;
-    top: 50%;
-    transform: translateY(-50%);
-    height: .7rem;
-    background-color: var(--marker-color);
-    transition: all .5s;
 }

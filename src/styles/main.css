@@ -50,38 +50,38 @@ body:not(.show-time) #time-clock {
   display: none;
 }
 
-#clock-clock {
+#clock {
   display: flex;
   gap: 5px;
 }
 
-#clock-clock .digit {
+#clock .digit {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5px;
 }
 
-#clock-clock .digit .mini-clock {
+#clock .digit .mini-clock {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   position: relative;
-  background: var(--background);
+  /* background: var(--background); */
   --up: rotate(-90deg);
   --right: rotate(0deg);
   --left: rotate(-180deg);
   --down: rotate(90deg);
 }
 
-#clock-clock .digit .mini-clock .shadow {
+#clock .digit .mini-clock .shadow {
   width: 100px;
   height: 100px;
   position: absolute;
   border-radius: 50%;
 }
 
-#clock-clock .digit .mini-clock .center {
-  background-color: var(--background);
+#clock .digit .mini-clock .center {
+  /* background-color: var(--background); */
   border-radius: 50%;
   width: 6px;
   height: 6px;
@@ -91,34 +91,34 @@ body:not(.show-time) #time-clock {
   transform: translate(-50%, -50%);
 }
 
-#clock-clock .digit .mini-clock .hours,
-#clock-clock .digit .mini-clock .minutes {
+#clock .digit .mini-clock .hours,
+#clock .digit .mini-clock .minutes {
   position: absolute;
   top: calc(50% - 6px);
   left: calc(50% - 6px);
   height: 12px;
-  background-color: var(--hands-color);
+  background-color: var(--accent-color);
   transform-origin: 6px 6px;
   border-radius: .5rem 0 0 .5rem;
   transform: rotate(135deg);
   transition: all 2s, opacity .5s;
 }
 
-#clock-clock .digit .mini-clock .hours {
+#clock .digit .mini-clock .hours {
   width: 48px;
 }
 
-#clock-clock .digit .mini-clock .minutes {
+#clock .digit .mini-clock .minutes {
   width: 52px;
   box-shadow: 0px 0px 2px 1px #000A;
 }
 
-body.seconds #clock-clock .digit:first-child .mini-clock:first-child .center {
+body.seconds #clock .digit:first-child .mini-clock:first-child .center {
   z-index: 1;
   background: orange;
 }
 
-body.seconds #clock-clock .digit:first-child .mini-clock:first-child .second {
+body.seconds #clock .digit:first-child .mini-clock:first-child .second {
   height: 2px;
   width: 40px;
   background: orange;
@@ -129,31 +129,31 @@ body.seconds #clock-clock .digit:first-child .mini-clock:first-child .second {
   transform-origin: 1px 1px;
 }
 
-#clock-clock .digit [data-hour="1"] .hours,
-#clock-clock .digit [data-minute="1"] .minutes {
+#clock .digit [data-hour="1"] .hours,
+#clock .digit [data-minute="1"] .minutes {
   transform: var(--up);
   box-shadow: 0px 0px 2px 1px #000A, -3px -3px 4px 0px #0006;
 }
 
-#clock-clock .digit [data-hour="2"] .hours,
-#clock-clock .digit [data-minute="2"] .minutes {
+#clock .digit [data-hour="2"] .hours,
+#clock .digit [data-minute="2"] .minutes {
   transform: var(--right);
   box-shadow: 0px 0px 2px 1px #000A, -3px 3px 4px 0px #0006;
 }
 
-#clock-clock .digit [data-hour="3"] .hours,
-#clock-clock .digit [data-minute="3"] .minutes {
+#clock .digit [data-hour="3"] .hours,
+#clock .digit [data-minute="3"] .minutes {
   transform: var(--down);
   box-shadow: 0px 0px 2px 1px #000A, 0 3px 4px 0px #0006;
 }
 
-#clock-clock .digit [data-hour="4"] .hours,
-#clock-clock .digit [data-minute="4"] .minutes {
+#clock .digit [data-hour="4"] .hours,
+#clock .digit [data-minute="4"] .minutes {
   transform: var(--left);
   box-shadow: 0px 0px 2px 1px #000A, 3px -3px 4px 0px #0006;
 }
 
-#clock-clock .digit .inactive .hands {
+#clock .digit .inactive .hands {
   opacity: .03;
   box-shadow: none;
 }
@@ -187,16 +187,7 @@ body.seconds #clock-clock .digit:first-child .mini-clock:first-child .second {
   gap: 5px;
 }
 
-#clock {
-  display: grid;
-  grid-template-columns: repeat(11, 1fr);
-  row-gap: 5px;
-  font-size: 2.5vw;
-  max-width: 80vw;
-}
-
-body.loading #clock,
-body.loading #clock .char {
+body.loading #clock {
   transition: none;
 }
 
@@ -443,34 +434,12 @@ footer {
 }
 
 @media screen and (min-width: 1000px) {
-  #clock {
-    font-size: 2vw;
-  }
-
-  .char {
-    padding: 1.5vh 1.5vw;
-  }
-
-  #flex-clock {
-    font-size: 2.5vw;
-  }
 }
 
 @media screen and (min-width: 1600px) {
-  #clock {
-    font-size: 3rem;
-  }
-
-  .char {
-    padding: 2rem;
-  }
 }
 
 @media only screen and (max-width: 750px) {
-  #clock {
-    font-size: 3vw;
-  }
-
   #exit-zen {
     font-size: 1.7rem;
   }

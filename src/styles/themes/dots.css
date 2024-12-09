@@ -1,7 +1,3 @@
-[data-theme|='dots'] #clock {
-    column-gap: 5px;
-}
-
 [data-theme|='dots'] .char {
     width: 2.5vw;
     height: 2.5vw;

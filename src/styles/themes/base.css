@@ -2,40 +2,39 @@
   --accent-color: #f73625;
   --background: #12121a;
   --font-color: #a3a29a;
+  --hands-color: #f73625;
 }
 
 [data-theme$='light'] {
   --font-color: #2f2e2c;
   --background: #eaeaec;
-  --hands-color: #2f2e2c;
 }
 
 [data-theme$='light'] body.screensaver {
   box-shadow: 0px 0px 150px rgba(0, 0, 0, 0.5) inset;
 }
 
-[data-theme$='light'] #clock-clock .digit .mini-clock {
+[data-theme$='light'] #clock .digit .mini-clock {
   box-shadow: inset 10px 0px 16px 0px #fff, -1px 0 0 0 #FFF;
 }
 
-[data-theme$='light'] #clock-clock .digit .mini-clock .shadow {
+[data-theme$='light'] #clock .digit .mini-clock .shadow {
   box-shadow: inset -12px 2px 10px -1px #0005;
 }
 
 [data-theme$='dark'] {
   --font-color: #a3a29a;
   --background: #12121a;
-  --hands-color: #a3a29a;
 }
 
 [data-theme$='dark'] body.screensaver {
   box-shadow: 0px 0px 150px rgba(0, 0, 0, 0.9) inset;
 }
 
-[data-theme$='dark'] #clock-clock .digit .mini-clock {
+[data-theme$='dark'] #clock .digit .mini-clock {
   box-shadow: -2px 1px 0px -1px #FFF3;
 }
 
-[data-theme$='dark'] #clock-clock .digit .mini-clock .shadow {
+[data-theme$='dark'] #clock .digit .mini-clock .shadow {
   box-shadow: inset -10px 2px 10px -2px #000;
 }

@@ -102,7 +102,7 @@ function updateTime() {
 }
 
 function drawClock() {
-  const clock = document.getElementById('clock-clock')!;
+  const clock = document.getElementById('clock')!;
 
   for (let i = 0; i < 4; i++) {
     const digit = document.createElement('div');

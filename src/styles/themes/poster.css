@@ -24,10 +24,6 @@
   text-shadow: none;
 }
 
-[data-theme|='poster'] body.solid #clock {
-  border-radius: 0;
-}
-
 [data-theme|='poster'] .char:not(.active) {
   color: color-mix(in srgb, var(--font-color), transparent 60%)
 }

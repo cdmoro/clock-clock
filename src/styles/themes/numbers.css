@@ -1,7 +1,3 @@
-[data-theme|='numbers'] #clock {
-    column-gap: 5px;
-}
-
 [data-theme|='numbers'] .char:not(.active),
 [data-theme|='numbers'] #flex-clock .row .word:not(.active) {
     position: relative;

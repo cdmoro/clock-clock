@@ -15,18 +15,18 @@ import { initSeconds } from './seconds';
 
 const MODULES = [
   initStaticMode,
-  initGrid,
+  // initGrid,
   initClock,
-  initFont,
+  // initFont,
   initFullscreenMode,
   initLocale,
   initShowTimeMode,
   initTheme,
   initZenMode,
-  initFocus,
-  initFuzzy,
-  initSolid,
-  initMiniMode,
+  // initFocus,
+  // initFuzzy,
+  // initSolid,
+  // initMiniMode,
   initSeconds,
 ];
 
