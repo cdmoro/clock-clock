@@ -67,6 +67,7 @@ body:not(.show-time) #time-clock {
   border-radius: 50%;
   position: relative;
   background: var(--background);
+  box-shadow: -2px 1px 0px -1px #FFF3;
   --up: rotate(-90deg);
   --right: rotate(0deg);
   --left: rotate(-180deg);
@@ -78,7 +79,7 @@ body:not(.show-time) #time-clock {
   height: 100px;
   position: absolute;
   border-radius: 50%;
-  box-shadow: inset -10px 2px 10px -2px #000, -2px 1px 0px -1px #FFF3;
+  box-shadow: inset -10px 2px 10px -2px #000;
 }
 
 #clock-clock .digit .mini-clock .center {
@@ -118,306 +119,31 @@ body:not(.show-time) #time-clock {
 #clock-clock .digit [data-hour="1"] .hours,
 #clock-clock .digit [data-minute="1"] .minutes {
   transform: var(--up);
+  box-shadow: -3px -3px 4px 0px #0006;
 }
 
 #clock-clock .digit [data-hour="2"] .hours,
 #clock-clock .digit [data-minute="2"] .minutes {
   transform: var(--right);
+  box-shadow: -3px 3px 4px 0px #0006;
 }
 
 #clock-clock .digit [data-hour="3"] .hours,
 #clock-clock .digit [data-minute="3"] .minutes {
   transform: var(--down);
+  box-shadow: 0 3px 4px 0px #0006;
 }
 
 #clock-clock .digit [data-hour="4"] .hours,
 #clock-clock .digit [data-minute="4"] .minutes {
   transform: var(--left);
+  box-shadow: -3px 3px 4px 0px #0006;
 }
 
 #clock-clock .digit .inactive .hands {
   opacity: .03;
+  box-shadow: none;
 }
-
-/* #clock-clock .digit[data-number="0"] .mini-clock:nth-child(1) .hours,
-#clock-clock .digit[data-number="0"] .mini-clock:nth-child(5) .hours {
-  transform: var(--right);
-}
-
-#clock-clock .digit[data-number="0"] .mini-clock:nth-child(1) .minutes,
-#clock-clock .digit[data-number="0"] .mini-clock:nth-child(2) .minutes,
-#clock-clock .digit[data-number="0"] .mini-clock:nth-child(3) .hours,
-#clock-clock .digit[data-number="0"] .mini-clock:nth-child(4) .hours {
-  transform: var(--down);
-}
-
-#clock-clock .digit[data-number="0"] .mini-clock:nth-child(2) .hours {
-  transform: var(--left);
-}
-
-#clock-clock .digit[data-number="0"] .mini-clock:nth-child(3) .minutes,
-#clock-clock .digit[data-number="0"] .mini-clock:nth-child(4) .minutes,
-#clock-clock .digit[data-number="0"] .mini-clock:nth-child(5) .minutes,
-#clock-clock .digit[data-number="0"] .mini-clock:nth-child(6) .minutes {
-  transform: var(--up);
-}
-
-#clock-clock .digit[data-number="0"] .mini-clock:nth-child(6) .hours {
-  transform: var(--left);
-}
-
-#clock-clock .digit[data-number="1"] .mini-clock:nth-child(2) .hours,
-#clock-clock .digit[data-number="1"] .mini-clock:nth-child(2) .minutes,
-#clock-clock .digit[data-number="1"] .mini-clock:nth-child(4) .hours {
-  transform: var(--down);
-}
-
-#clock-clock .digit[data-number="1"] .mini-clock:nth-child(4) .minutes,
-#clock-clock .digit[data-number="1"] .mini-clock:nth-child(6) .hours,
-#clock-clock .digit[data-number="1"] .mini-clock:nth-child(6) .minutes {
-  transform: var(--up);
-}
-
-#clock-clock .digit[data-number="1"] .mini-clock:nth-child(1) .hands,
-#clock-clock .digit[data-number="1"] .mini-clock:nth-child(3) .hands,
-#clock-clock .digit[data-number="1"] .mini-clock:nth-child(5) .hands {
-  opacity: .03;
-}
-
-#clock-clock .digit[data-number="2"] .mini-clock:nth-child(1) .hands {
-  transform: var(--right);
-}
-
-#clock-clock .digit[data-number="2"] .mini-clock:nth-child(2) .hours,
-#clock-clock .digit[data-number="2"] .mini-clock:nth-child(4) .hours {
-  transform: var(--left);
-}
-
-#clock-clock .digit[data-number="2"] .mini-clock:nth-child(2) .minutes,
-#clock-clock .digit[data-number="2"] .mini-clock:nth-child(3) .minutes {
-  transform: var(--down);
-}
-
-#clock-clock .digit[data-number="2"] .mini-clock:nth-child(4) .minutes,
-#clock-clock .digit[data-number="2"] .mini-clock:nth-child(5) .minutes {
-  transform: var(--up);
-}
-
-#clock-clock .digit[data-number="2"] .mini-clock:nth-child(3) .hours,
-#clock-clock .digit[data-number="2"] .mini-clock:nth-child(5) .hours {
-  transform: var(--right);
-}
-
-#clock-clock .digit[data-number="2"] .mini-clock:nth-child(6) .hands {
-  transform: var(--left);
-}
-
-#clock-clock .digit[data-number="3"] .mini-clock:nth-child(1) .hours,
-#clock-clock .digit[data-number="3"] .mini-clock:nth-child(1) .minutes,
-#clock-clock .digit[data-number="3"] .mini-clock:nth-child(3) .hours,
-#clock-clock .digit[data-number="3"] .mini-clock:nth-child(3) .minutes,
-#clock-clock .digit[data-number="3"] .mini-clock:nth-child(5) .hours,
-#clock-clock .digit[data-number="3"] .mini-clock:nth-child(5) .minutes {
-  transform: var(--right);
-}
-
-#clock-clock .digit[data-number="3"] .mini-clock:nth-child(2) .hours,
-#clock-clock .digit[data-number="3"] .mini-clock:nth-child(4) .hours,
-#clock-clock .digit[data-number="3"] .mini-clock:nth-child(6) .hours {
-  transform: var(--left);
-}
-
-#clock-clock .digit[data-number="3"] .mini-clock:nth-child(2) .minutes {
-  transform: var(--down);
-}
-
-#clock-clock .digit[data-number="3"] .mini-clock:nth-child(4) .minutes,
-#clock-clock .digit[data-number="3"] .mini-clock:nth-child(6) .minutes {
-  transform: var(--up);
-}
-
-#clock-clock .digit[data-number="4"] .mini-clock:nth-child(1) .hands,
-#clock-clock .digit[data-number="4"] .mini-clock:nth-child(2) .hands,
-#clock-clock .digit[data-number="4"] .mini-clock:nth-child(4) .minutes {
-  transform: var(--down);
-}
-
-#clock-clock .digit[data-number="4"] .mini-clock:nth-child(3) .minutes {
-  transform: var(--right);
-}
-
-#clock-clock .digit[data-number="4"] .mini-clock:nth-child(5) .hands {
-  opacity: .03;
-}
-
-#clock-clock .digit[data-number="4"] .mini-clock:nth-child(3) .hours,
-#clock-clock .digit[data-number="4"] .mini-clock:nth-child(4) .hours,
-#clock-clock .digit[data-number="4"] .mini-clock:nth-child(6) .hands {
-  transform: var(--up);
-}
-
-#clock-clock .digit[data-number="5"] .mini-clock:nth-child(1) .hours {
-  transform: var(--right);
-}
-
-#clock-clock .digit[data-number="5"] .mini-clock:nth-child(1) .minutes {
-  transform: var(--down);
-}
-
-#clock-clock .digit[data-number="5"] .mini-clock:nth-child(2) .hours {
-  transform: var(--left);
-}
-
-#clock-clock .digit[data-number="5"] .mini-clock:nth-child(2) .minutes {
-  transform: var(--left);
-}
-
-#clock-clock .digit[data-number="5"] .mini-clock:nth-child(3) .hours {
-  transform: var(--up);
-}
-
-#clock-clock .digit[data-number="5"] .mini-clock:nth-child(3) .minutes {
-  transform: var(--right);
-}
-
-#clock-clock .digit[data-number="5"] .mini-clock:nth-child(4) .hours {
-  transform: var(--down);
-}
-
-#clock-clock .digit[data-number="5"] .mini-clock:nth-child(4) .minutes {
-  transform: var(--left);
-}
-
-#clock-clock .digit[data-number="5"] .mini-clock:nth-child(5) .hours {
-  transform: var(--right);
-}
-
-#clock-clock .digit[data-number="5"] .mini-clock:nth-child(5) .minutes {
-  transform: var(--right);
-}
-
-#clock-clock .digit[data-number="5"] .mini-clock:nth-child(6) .hours {
-  transform: var(--left);
-}
-
-#clock-clock .digit[data-number="5"] .mini-clock:nth-child(6) .minutes {
-  transform: var(--up);
-}
-
-#clock-clock .digit[data-number="6"] .mini-clock:nth-child(1) .hours {
-  transform: var(--down);
-}
-
-#clock-clock .digit[data-number="6"] .mini-clock:nth-child(1) .minutes {
-  transform: var(--right);
-}
-
-#clock-clock .digit[data-number="6"] .mini-clock:nth-child(2) .hands {
-  transform: var(--left);
-}
-
-#clock-clock .digit[data-number="6"] .mini-clock:nth-child(3) .hours {
-  transform: var(--up);
-}
-
-#clock-clock .digit[data-number="6"] .mini-clock:nth-child(3) .minutes {
-  transform: var(--down);
-}
-
-#clock-clock .digit[data-number="6"] .mini-clock:nth-child(4) .hours {
-  transform: var(--left);
-}
-
-#clock-clock .digit[data-number="6"] .mini-clock:nth-child(4) .minutes {
-  transform: var(--down);
-}
-
-#clock-clock .digit[data-number="6"] .mini-clock:nth-child(5) .hours {
-  transform: var(--up);
-}
-
-#clock-clock .digit[data-number="6"] .mini-clock:nth-child(5) .minutes {
-  transform: var(--right);
-}
-
-#clock-clock .digit[data-number="6"] .mini-clock:nth-child(6) .hours {
-  transform: var(--up);
-}
-
-#clock-clock .digit[data-number="6"] .mini-clock:nth-child(6) .minutes {
-  transform: var(--left);
-}
-
-#clock-clock .digit[data-number="7"] .mini-clock:nth-child(1) .hands {
-  transform: var(--right);
-}
-
-#clock-clock .digit[data-number="7"] .mini-clock:nth-child(2) .minutes {
-  transform: var(--left);
-}
-
-#clock-clock .digit[data-number="7"] .mini-clock:nth-child(2) .hours,
-#clock-clock .digit[data-number="7"] .mini-clock:nth-child(4) .minutes {
-  transform: var(--down);
-}
-
-#clock-clock .digit[data-number="7"] .mini-clock:nth-child(4) .hours,
-#clock-clock .digit[data-number="7"] .mini-clock:nth-child(6) .hands {
-  transform: var(--up);
-}
-
-#clock-clock .digit[data-number="7"] .mini-clock:nth-child(3) .hands,
-#clock-clock .digit[data-number="7"] .mini-clock:nth-child(5) .hands {
-  opacity: .03;
-}
-
-#clock-clock .digit[data-number="9"] .mini-clock:nth-child(1) .hours {
-  transform: var(--right);
-}
-
-#clock-clock .digit[data-number="9"] .mini-clock:nth-child(1) .minutes {
-  transform: var(--down);
-}
-
-#clock-clock .digit[data-number="9"] .mini-clock:nth-child(2) .hours {
-  transform: var(--left);
-}
-
-#clock-clock .digit[data-number="9"] .mini-clock:nth-child(2) .minutes {
-  transform: var(--down);
-}
-
-#clock-clock .digit[data-number="9"] .mini-clock:nth-child(3) .hours {
-  transform: var(--up);
-}
-
-#clock-clock .digit[data-number="9"] .mini-clock:nth-child(3) .minutes {
-  transform: var(--right);
-}
-
-#clock-clock .digit[data-number="9"] .mini-clock:nth-child(4) .hours {
-  transform: var(--down);
-}
-
-#clock-clock .digit[data-number="9"] .mini-clock:nth-child(4) .minutes {
-  transform: var(--up);
-}
-
-#clock-clock .digit[data-number="9"] .mini-clock:nth-child(5) .hours {
-  transform: var(--right);
-}
-
-#clock-clock .digit[data-number="9"] .mini-clock:nth-child(5) .minutes {
-  transform: var(--right);
-}
-
-#clock-clock .digit[data-number="9"] .mini-clock:nth-child(6) .hours {
-  transform: var(--left);
-}
-
-#clock-clock .digit[data-number="9"] .mini-clock:nth-child(6) .minutes {
-  transform: var(--up);
-} */
 
 #clock,
 #fuzzy-clock,
