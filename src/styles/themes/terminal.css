@@ -52,6 +52,24 @@
   animation: flicker 0.5s infinite;
 }
 
+[data-theme|='terminal'] #clock .digit .mini-clock {
+  box-shadow: none;
+}
+
+[data-theme|='terminal'] #clock .digit .mini-clock .shadow {
+  box-shadow: none;
+}
+
+[data-theme|='terminal'] #clock .digit .mini-clock .hands {
+  box-shadow: none;
+  border-radius: 0;
+  background-color: var(--accent-color);
+}
+
+[data-theme|='terminal'] .inactive {
+  opacity: 0;
+}
+
 [data-theme|='terminal'] #fuzzy-clock {
   text-shadow: none;
 }
