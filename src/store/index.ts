@@ -13,6 +13,7 @@ interface Stateful {
   fuzzy: boolean;
   solid: boolean;
   mini: boolean;
+  seconds: boolean;
 }
 
 export interface Stateless {
@@ -195,5 +196,6 @@ export function createStore() {
     fuzzy: false,
     solid: true,
     mini: false,
+    seconds: false,
   });
 }

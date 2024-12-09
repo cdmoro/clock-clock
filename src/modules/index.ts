@@ -11,6 +11,7 @@ import { initFocus } from './focus';
 import { initFuzzy } from './fuzzy';
 import { initSolid } from './solid';
 import { initMiniMode } from './mini';
+import { initSeconds } from './seconds';
 
 const MODULES = [
   initStaticMode,
@@ -26,6 +27,7 @@ const MODULES = [
   initFuzzy,
   initSolid,
   initMiniMode,
+  initSeconds,
 ];
 
 export function initModules() {

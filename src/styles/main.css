@@ -67,7 +67,6 @@ body:not(.show-time) #time-clock {
   border-radius: 50%;
   position: relative;
   background: var(--background);
-  box-shadow: -2px 1px 0px -1px #FFF3;
   --up: rotate(-90deg);
   --right: rotate(0deg);
   --left: rotate(-180deg);
@@ -79,19 +78,17 @@ body:not(.show-time) #time-clock {
   height: 100px;
   position: absolute;
   border-radius: 50%;
-  box-shadow: inset -10px 2px 10px -2px #000;
 }
 
 #clock-clock .digit .mini-clock .center {
   background-color: var(--background);
   border-radius: 50%;
-  width: 4px;
-  height: 4px;
+  width: 6px;
+  height: 6px;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  /* z-index: 2; */
 }
 
 #clock-clock .digit .mini-clock .hours,
@@ -100,7 +97,7 @@ body:not(.show-time) #time-clock {
   top: calc(50% - 6px);
   left: calc(50% - 6px);
   height: 12px;
-  background-color: var(--font-color);
+  background-color: var(--hands-color);
   transform-origin: 6px 6px;
   border-radius: .5rem 0 0 .5rem;
   transform: rotate(135deg);
@@ -116,28 +113,44 @@ body:not(.show-time) #time-clock {
   box-shadow: 0px 0px 2px 1px #000A;
 }
 
+body.seconds #clock-clock .digit:first-child .mini-clock:first-child .center {
+  z-index: 1;
+  background: orange;
+}
+
+body.seconds #clock-clock .digit:first-child .mini-clock:first-child .second {
+  height: 2px;
+  width: 40px;
+  background: orange;
+  position: absolute;
+  top: calc(50% - 1px);
+  left: calc(50% - 1px);
+  transform: rotate(0deg);
+  transform-origin: 1px 1px;
+}
+
 #clock-clock .digit [data-hour="1"] .hours,
 #clock-clock .digit [data-minute="1"] .minutes {
   transform: var(--up);
-  box-shadow: -3px -3px 4px 0px #0006;
+  box-shadow: 0px 0px 2px 1px #000A, -3px -3px 4px 0px #0006;
 }
 
 #clock-clock .digit [data-hour="2"] .hours,
 #clock-clock .digit [data-minute="2"] .minutes {
   transform: var(--right);
-  box-shadow: -3px 3px 4px 0px #0006;
+  box-shadow: 0px 0px 2px 1px #000A, -3px 3px 4px 0px #0006;
 }
 
 #clock-clock .digit [data-hour="3"] .hours,
 #clock-clock .digit [data-minute="3"] .minutes {
   transform: var(--down);
-  box-shadow: 0 3px 4px 0px #0006;
+  box-shadow: 0px 0px 2px 1px #000A, 0 3px 4px 0px #0006;
 }
 
 #clock-clock .digit [data-hour="4"] .hours,
 #clock-clock .digit [data-minute="4"] .minutes {
   transform: var(--left);
-  box-shadow: -3px 3px 4px 0px #0006;
+  box-shadow: 0px 0px 2px 1px #000A, 3px -3px 4px 0px #0006;
 }
 
 #clock-clock .digit .inactive .hands {
