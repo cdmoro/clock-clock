@@ -1,0 +1,116 @@
+#clock {
+  --up: rotate(-90deg);
+  --right: rotate(0deg);
+  --left: rotate(-180deg);
+  --down: rotate(90deg);
+  --hand-height: 12px;
+  --half-hand-width: calc(var(--hand-height) / 2);
+  --transform-origin: var(--half-hand-width) var(--half-hand-width);
+  --hand-border-radius: 0.5rem 0 0 0.5rem;
+
+  display: flex;
+  gap: 5px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0.7rem 0.5rem;
+  border-radius: 0.5rem;
+  /* z-index: 2; */
+  /* font-family: var(--override-clock-font-family, var(--clock-font-family)); */
+  /* line-height: var(--clock-line-height, 1); */
+  /* transition: all 0.5s; */
+  /* font-weight: var(--clock-font-weight, normal); */
+}
+
+#clock .digit {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+
+#clock .digit .mini-clock {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+  background: var(--mini-clock-background);
+  overflow: hidden;
+}
+
+#clock .digit .mini-clock .shadow {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+#clock .digit .mini-clock .center {
+  background-color: var(--axis-background);
+  border-radius: 50%;
+  width: var(--axis-width, 6px);
+  height: var(--axis-height, 6px);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#clock .digit .mini-clock .hours,
+#clock .digit .mini-clock .minutes {
+  position: absolute;
+  border-radius: var(--hand-border-radius);
+  transform: rotate(135deg);
+  transition:
+    all 2s,
+    opacity 0.5s;
+  height: var(--hand-height);
+  top: calc(50% - var(--half-hand-width));
+  left: calc(50% - var(--half-hand-width));
+  transform-origin: var(--transform-origin);
+}
+
+#clock .digit .mini-clock .hours {
+  width: var(--hour-hand-width, 48px);
+  background-color: var(--hour-hand-color, var(--accent-color));
+}
+
+#clock .digit .mini-clock .minutes {
+  width: var(--minute-hand-width, 52px);
+  background-color: var(--minute-hand-color, var(--accent-color));
+  box-shadow: 0px 0px 2px 1px #000a;
+}
+
+#clock .digit [data-hour='1'] .hours,
+#clock .digit [data-minute='1'] .minutes {
+  transform: var(--up);
+  box-shadow:
+    0px 0px 2px 1px #000a,
+    -3px -3px 4px 0px var(--hand-drop-shadow);
+}
+
+#clock .digit [data-hour='2'] .hours,
+#clock .digit [data-minute='2'] .minutes {
+  transform: var(--right);
+  box-shadow:
+    0px 0px 2px 1px #000a,
+    -3px 3px 4px 0px var(--hand-drop-shadow);
+}
+
+#clock .digit [data-hour='3'] .hours,
+#clock .digit [data-minute='3'] .minutes {
+  transform: var(--down);
+  box-shadow:
+    0px 0px 2px 1px #000a,
+    0 3px 4px 0px var(--hand-drop-shadow);
+}
+
+#clock .digit [data-hour='4'] .hours,
+#clock .digit [data-minute='4'] .minutes {
+  transform: var(--left);
+  box-shadow:
+    0px 0px 2px 1px #000a,
+    3px -3px 4px 0px var(--hand-drop-shadow);
+}
+
+body.loading #clock {
+  transition: none;
+}

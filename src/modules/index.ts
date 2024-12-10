@@ -1,16 +1,16 @@
 import { initStaticMode } from './static';
 import { initClock } from './clock';
-import { initFont } from './font';
+// import { initFont } from './font';
 import { initFullscreenMode } from './fullscreen';
 import { initLocale } from './locales';
 import { initTheme } from './themes';
 import { initShowTimeMode } from './show-time';
 import { initZenMode } from './zen';
-import { initGrid } from './grid';
+// import { initGrid } from './grid';
 import { initFocus } from './focus';
-import { initFuzzy } from './fuzzy';
-import { initSolid } from './solid';
-import { initMiniMode } from './mini';
+// import { initFuzzy } from './fuzzy';
+// import { initSolid } from './solid';
+// import { initMiniMode } from './mini';
 import { initSeconds } from './seconds';
 
 const MODULES = [
@@ -23,7 +23,7 @@ const MODULES = [
   initShowTimeMode,
   initTheme,
   initZenMode,
-  // initFocus,
+  initFocus,
   // initFuzzy,
   // initSolid,
   // initMiniMode,

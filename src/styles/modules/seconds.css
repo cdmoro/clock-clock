@@ -1,0 +1,15 @@
+body.seconds #clock .digit:first-child .mini-clock:first-child .center {
+    z-index: 1;
+    background: orange;
+  }
+  
+  body.seconds #clock .digit:first-child .mini-clock:first-child .second {
+    height: 2px;
+    width: 40px;
+    background: orange;
+    position: absolute;
+    top: calc(50% - 1px);
+    left: calc(50% - 1px);
+    transform: rotate(0deg);
+    transform-origin: 1px 1px;
+  }

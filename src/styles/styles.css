@@ -1,4 +1,7 @@
 @import url(main.css);
+@import url(modules/clock.css);
+@import url(modules/seconds.css);
+@import url(modules/focus.css);
 
 @import url(themes/base.css);
 @import url(themes/bohemian.css);

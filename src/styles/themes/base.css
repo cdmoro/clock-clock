@@ -8,6 +8,7 @@
 [data-theme$='light'] {
   --font-color: #2f2e2c;
   --background: #eaeaec;
+  --hand-drop-shadow: #0003;
 }
 
 [data-theme$='light'] body.screensaver {
@@ -25,6 +26,7 @@
 [data-theme$='dark'] {
   --font-color: #a3a29a;
   --background: #12121a;
+  --hand-drop-shadow: #0006;
 }
 
 [data-theme$='dark'] body.screensaver {

@@ -8,198 +8,37 @@
   --purple: #a033b3;
 }
 
-[data-theme|='rainbow'] .char {
-  width: 2.5vw;
-  height: 2.5vw;
-  padding: 1.25vw;
+[data-theme|='rainbow'] #clock .digit .mini-clock:nth-child(7n + 1) {
+  --minute-hand-color: var(--red);
+  --hour-hand-color: var(--red);
 }
 
-[data-theme|='rainbow'] .char[data-index="0"],
-[data-theme|='rainbow'] #flex-clock .row:first-child .word.last {
-  border-radius: .5rem 0 0 0;
+[data-theme|='rainbow'] #clock .digit .mini-clock:nth-child(7n + 2) {
+  --minute-hand-color: var(--orange);
+  --hour-hand-color: var(--orange);
 }
 
-[data-theme|='rainbow'] .char[data-index="10"],
-[data-theme|='rainbow'] #flex-clock .row:first-child .word.first {
-  border-radius: 0 .5rem 0 0;
+[data-theme|='rainbow'] #clock .digit .mini-clock:nth-child(7n + 3) {
+  --minute-hand-color: var(--pink);
+  --hour-hand-color: var(--pink);
 }
 
-[data-theme|='rainbow'] .char[data-index="99"],
-[data-theme|='rainbow'] #flex-clock .row:last-child .word.last {
-  border-radius: 0 0 0 .5rem;
+[data-theme|='rainbow'] #clock .digit .mini-clock:nth-child(7n + 4) {
+  --minute-hand-color: var(--yellow);
+  --hour-hand-color: var(--yellow);
 }
 
-[data-theme|='rainbow'] .char[data-index="109"],
-[data-theme|='rainbow'] #flex-clock .row:last-child .word.first {
-  border-radius: 0 0 .5rem 0;
+[data-theme|='rainbow'] #clock .digit .mini-clock:nth-child(7n + 5) {
+  --minute-hand-color: var(--green);
+  --hour-hand-color: var(--green);
 }
 
-[data-theme|='rainbow'] .char:nth-child(n):nth-child(-n+11),
-[data-theme|='rainbow'] .char:nth-child(n+78):nth-child(-n+88),
-[data-theme|='rainbow'] #flex-clock .row[data-row="0"] .word,
-[data-theme|='rainbow'] #flex-clock .row[data-row="7"] .word,
-[data-theme|='rainbow'] body.mini .char[data-word="0"],
-[data-theme|='rainbow'] body.mini .char[data-word="7"] {
-  background-color: color-mix(in srgb, var(--red), transparent var(--transparency));
+[data-theme|='rainbow'] #clock .digit .mini-clock:nth-child(7n + 6) {
+  --minute-hand-color: var(--blue);
+  --hour-hand-color: var(--blue);
 }
 
-[data-theme|='rainbow'] .char:nth-child(n+12):nth-child(-n+22),
-[data-theme|='rainbow'] .char:nth-child(n+89):nth-child(-n+99),
-[data-theme|='rainbow'] #flex-clock .row[data-row="1"] .word,
-[data-theme|='rainbow'] #flex-clock .row[data-row="8"] .word,
-[data-theme|='rainbow'] body.mini .char[data-word="1"],
-[data-theme|='rainbow'] body.mini .char[data-word="8"] {
-  background-color: color-mix(in srgb, var(--orange), transparent var(--transparency));
-}
-
-[data-theme|='rainbow'] .char:nth-child(n+23):nth-child(-n+33),
-[data-theme|='rainbow'] .char:nth-child(n+100):nth-child(-n+110),
-[data-theme|='rainbow'] #flex-clock .row[data-row="2"] .word,
-[data-theme|='rainbow'] #flex-clock .row[data-row="9"] .word,
-[data-theme|='rainbow'] body.mini .char[data-word="2"],
-[data-theme|='rainbow'] body.mini .char[data-word="9"] {
-  background-color: color-mix(in srgb, var(--pink), transparent var(--transparency));
-}
-
-[data-theme|='rainbow'] .char:nth-child(n+34):nth-child(-n+44),
-[data-theme|='rainbow'] #flex-clock .row[data-row="3"] .word,
-[data-theme|='rainbow'] #flex-clock .row[data-row="10"] .word,
-[data-theme|='rainbow'] body.mini .char[data-word="3"],
-[data-theme|='rainbow'] body.mini .char[data-word="10"] {
-  background-color: color-mix(in srgb, var(--yellow), transparent var(--transparency));
-}
-
-[data-theme|='rainbow'] .char:nth-child(n+45):nth-child(-n+55),
-[data-theme|='rainbow'] #flex-clock .row[data-row="4"] .word,
-[data-theme|='rainbow'] #flex-clock .row[data-row="11"] .word,
-[data-theme|='rainbow'] body.mini .char[data-word="4"],
-[data-theme|='rainbow'] body.mini .char[data-word="11"] {
-  background-color: color-mix(in srgb, var(--green), transparent var(--transparency));
-}
-
-[data-theme|='rainbow'] .char:nth-child(n+56):nth-child(-n+66),
-[data-theme|='rainbow'] #flex-clock .row[data-row="5"] .word,
-[data-theme|='rainbow'] #flex-clock .row[data-row="12"] .word,
-[data-theme|='rainbow'] body.mini .char[data-word="5"],
-[data-theme|='rainbow'] body.mini .char[data-word="12"] {
-  background-color: color-mix(in srgb, var(--blue), transparent var(--transparency));
-}
-
-[data-theme|='rainbow'] .char:nth-child(n+67):nth-child(-n+77),
-[data-theme|='rainbow'] #flex-clock .row[data-row="6"] .word,
-[data-theme|='rainbow'] #flex-clock .row[data-row="13"] .word,
-[data-theme|='rainbow'] body.mini .char[data-word="6"],
-[data-theme|='rainbow'] body.mini .char[data-word="13"] {
-  background-color: color-mix(in srgb, var(--purple), transparent var(--transparency));
-}
-
-[data-theme|='rainbow'] body.mini #flex-clock .word.active[data-word="0"],
-[data-theme|='rainbow'] body.mini #flex-clock .word.active[data-word="7"] {
-  background-color: color-mix(in srgb, var(--red), transparent var(--transparency));
-}
-
-[data-theme|='rainbow'] body.mini #flex-clock .word.active[data-word="1"],
-[data-theme|='rainbow'] body.mini #flex-clock .word.active[data-word="8"] {
-  background-color: color-mix(in srgb, var(--orange), transparent var(--transparency));
-}
-
-[data-theme|='rainbow'] body.mini #flex-clock .word.active[data-word="2"],
-[data-theme|='rainbow'] body.mini #flex-clock .word.active[data-word="9"] {
-  background-color: color-mix(in srgb, var(--pink), transparent var(--transparency));
-}
-
-[data-theme|='rainbow'] body.mini #flex-clock .word.active[data-word="3"],
-[data-theme|='rainbow'] body.mini #flex-clock .word.active[data-word="10"] {
-  background-color: color-mix(in srgb, var(--yellow), transparent var(--transparency));
-}
-
-[data-theme|='rainbow'] body.mini #flex-clock .word.active[data-word="4"],
-[data-theme|='rainbow'] body.mini #flex-clock .word.active[data-word="11"] {
-  background-color: color-mix(in srgb, var(--green), transparent var(--transparency));
-}
-
-[data-theme|='rainbow'] body.mini #flex-clock .word.active[data-word="5"]
-[data-theme|='rainbow'] body.mini #flex-clock .word.active[data-word="12"] {
-  background-color: color-mix(in srgb, var(--blue), transparent var(--transparency));
-}
-
-[data-theme|='rainbow'] body.mini #flex-clock .word.active[data-word="6"],
-[data-theme|='rainbow'] body.mini #flex-clock .word.active[data-word="13"] {
-  background-color: color-mix(in srgb, var(--purple), transparent var(--transparency));
-}
-
-@media screen and (min-width: 1000px) {
-  [data-theme|='rainbow'] .char {
-    width: 2vw;
-    height: 2vw;
-    padding: 0.5vw;
-  }
-}
-
-[data-theme|='rainbow'] .char.active {
-  --transparency: 0%;
-}
-
-[data-theme|='rainbow'] #flex-clock {
-  gap: 0;
-  padding: 0;
-}
-
-[data-theme|='rainbow'] #flex-clock .row {
-  gap: 0;
-}
-
-[data-theme|='rainbow'] .word {
-  --transparency: 0%;
-}
-
-[data-theme|='rainbow'] .char:not(.active),
-[data-theme|='rainbow'] .word:not(.active) {
-  color: transparent;
-  --transparency: 0%;
-}
-
-[data-theme|='rainbow'] #flex-clock .row .word:not(.active) {
-  color: transparent;
-  flex: 1;
-}
-
-[data-theme|='rainbow'] body.focus .char:not(.active),
-[data-theme|='rainbow'] body.focus #flex-clock .row .word:not(.active) {
-  color: transparent;
-  --transparency: 60%;
-}
-
-[data-theme|='rainbow'] body.mini #flex-clock .row {
-  gap: 0;
-  align-items: start;
-}
-
-[data-theme|='rainbow'] body.mini .char,
-[data-theme|='rainbow'] body.mini #flex-clock .row .word {
-  border-radius: 0 !important;
-}
-
-[data-theme|='rainbow'] body.mini .char {
-  border-radius: 0;
-}
-
-[data-theme='rainbow-dark'] .char.active,
-[data-theme='rainbow-dark'] #flex-clock .row .word.active {
-  color: #FFF;
-}
-
-[data-theme='rainbow-dark'] body.focus .char.active.secondary,
-[data-theme='rainbow-dark'] body.focus #flex-clock .row .word.active.secondary {
-  color: color-mix(in srgb, #FFFa, transparent 25%);
-}
-
-[data-theme='rainbow-light'] .char.active,
-[data-theme='rainbow-light'] #flex-clock .row .word.active {
-  color: #000;
-}
-
-[data-theme='rainbow-light'] body.focus .char.active.secondary,
-[data-theme='rainbow-light'] body.focus #flex-clock .row .word.active.secondary {
-  color: color-mix(in srgb, #000a, transparent 25%);
+[data-theme|='rainbow'] #clock .digit .mini-clock:nth-child(7n + 7) {
+  --minute-hand-color: var(--purple);
+  --hour-hand-color: var(--purple);
 }
