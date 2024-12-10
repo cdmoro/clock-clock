@@ -4,12 +4,12 @@
 
 ## Features
 
-- Zen mode: remove all the distractions ([link](https://wordoclock.netlify.app/?zen=true))
-- [Screensaver mode](#screensaver): make the quotes dance around the screen! ([link](https://wordoclock.netlify.app/?screensaver=true))
+- Zen mode: remove all the distractions ([link](https://clockception.netlify.app/?zen=true))
+- [Screensaver mode](#screensaver): make the quotes dance around the screen! ([link](https://clockception.netlify.app/?screensaver=true))
 - Languages: supports English, Spanish, Portuguese, French, and Italian (by default, it will try to use the system language)
-  - Random language: see a quote in a different language each minute, isn't that cool? ([link]([https://wordoclock.netlify.app/?locale=random](https://wordoclock.netlify.app/?random-locale=true)))
+  - Random language: see a quote in a different language each minute, isn't that cool? ([link]([https://clockception.netlify.app/?locale=random](https://clockception.netlify.app/?random-locale=true)))
 - [Themes](#themes): the clock has `colour themes` and `special themes` and each theme has light and dark variants, of course
-  - Random colour theme: see a different colour theme each minute, isn't that even cooler? ([link](https://wordoclock.netlify.app/?theme=color-system))
+  - Random colour theme: see a different colour theme each minute, isn't that even cooler? ([link](https://clockception.netlify.app/?theme=color-system))
 - Fade effect
 - Font personalization: if you don't like the default font of a theme, that's perfectly fine, we won't judge you, so you can change it for another using the `font` param!
 - Responsive: no matter how long a quote is, it will always look good on desktop and mobile 😎
@@ -31,7 +31,7 @@ The clock can be controlled using URL parameters, these parameters will overwrit
 
 Developer settings
 
-- `time`: get the quotes for a particular time ([link](https://wordoclock.netlify.app/?time=12:30))
+- `time`: get the quotes for a particular time ([link](https://clockception.netlify.app/?time=12:30))
 
 ## Languages
 
@@ -43,7 +43,7 @@ Want to implement a new language? Sure thing, ping me and let's talk about it!
 
 If you want to help you can:
 
-- [Raise an issue to add a new quote](https://github.com/cdmoro/wordoclock/issues/new?template=add-quote.yml&labels=add-quote&title=%5B23%3A28%5D%5Ben%5D+Add+quote) or a new variant for a specific time
+- [Raise an issue to add a new quote](https://github.com/cdmoro/clockception/issues/new?template=add-quote.yml&labels=add-quote&title=%5B23%3A28%5D%5Ben%5D+Add+quote) or a new variant for a specific time
 - Raise an issue reporting a bug related to a quote (i.e. a typo)
 - Contact me and share your thoughts about a quote, the project, or anything you want :D
 - Show me your love in the form of [coffees](https://buymeacoffee.com/cdmoro), [cafecitos](http://cafecito.app/cdmoro)
@@ -63,7 +63,7 @@ Some nice themes, locale and font combinations!
 
 ### Photo
 
-https://wordoclock.netlify.app/?theme=photo-system
+https://clockception.netlify.app/?theme=photo-system
 
 |Fuzzy| Fuzzy + Solid |
 |---|---|

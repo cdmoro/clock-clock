@@ -1,0 +1,15 @@
+[data-theme|='silver'] {
+    --accent-color: #686765;
+    --silver-gradient-colors: var(--accent-color) 45%, #f6f2c0 50%, #aaa9a6 80%;
+}
+
+[data-theme|='silver'] .hands {
+    background-image: linear-gradient(0deg, var(--silver-gradient-colors));
+}
+
+[data-theme|='silver'] #clock .digit [data-hour="1"] .hours,
+[data-theme|='silver'] #clock .digit [data-minute="1"] .minutes,
+[data-theme|='silver'] #clock .digit [data-hour="4"] .hours,
+[data-theme|='silver'] #clock .digit [data-minute="4"] .minutes {
+    background-image: linear-gradient(180deg, var(--silver-gradient-colors));
+}

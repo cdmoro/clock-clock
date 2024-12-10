@@ -1,9 +1,10 @@
 #clock {
+  --clock-size: 8vw;
   --up: rotate(-90deg);
   --right: rotate(0deg);
   --left: rotate(-180deg);
   --down: rotate(90deg);
-  --hand-height: 12px;
+  --hand-height: .95vw; /* 12px */
   --half-hand-width: calc(var(--hand-height) / 2);
   --transform-origin: var(--half-hand-width) var(--half-hand-width);
   --hand-border-radius: 0.5rem 0 0 0.5rem;
@@ -14,11 +15,6 @@
   position: relative;
   padding: 0.7rem 0.5rem;
   border-radius: 0.5rem;
-  /* z-index: 2; */
-  /* font-family: var(--override-clock-font-family, var(--clock-font-family)); */
-  /* line-height: var(--clock-line-height, 1); */
-  /* transition: all 0.5s; */
-  /* font-weight: var(--clock-font-weight, normal); */
 }
 
 #clock .digit {
@@ -28,8 +24,8 @@
 }
 
 #clock .digit .mini-clock {
-  width: 100px;
-  height: 100px;
+  width: var(--clock-size);
+  height: var(--clock-size);
   border-radius: 50%;
   position: relative;
   background: var(--mini-clock-background);
@@ -37,8 +33,8 @@
 }
 
 #clock .digit .mini-clock .shadow {
-  width: 100px;
-  height: 100px;
+  width: var(--clock-size);
+  height: var(--clock-size);
   position: absolute;
   border-radius: 50%;
 }
@@ -60,7 +56,7 @@
   border-radius: var(--hand-border-radius);
   transform: rotate(135deg);
   transition:
-    all 2s,
+    transform 2s,
     opacity 0.5s;
   height: var(--hand-height);
   top: calc(50% - var(--half-hand-width));
@@ -69,12 +65,12 @@
 }
 
 #clock .digit .mini-clock .hours {
-  width: var(--hour-hand-width, 48px);
+  width: var(--hour-hand-width, 3.75vw); /* 48px */
   background-color: var(--hour-hand-color, var(--accent-color));
 }
 
 #clock .digit .mini-clock .minutes {
-  width: var(--minute-hand-width, 52px);
+  width: var(--minute-hand-width, 4.1vw); /* 52px */
   background-color: var(--minute-hand-color, var(--accent-color));
   box-shadow: 0px 0px 2px 1px #000a;
 }

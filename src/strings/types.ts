@@ -35,8 +35,10 @@ export type Translations = {
   frame: string;
   fullscreen_mode: string;
   fuzzy_mode: string;
+  golden: string;
   gray: string;
   green: string;
+  grey: string;
   handwriting: string;
   'he-IL': string;
   'it-IT': string;
@@ -53,6 +55,7 @@ export type Translations = {
   orange: string;
   photo: string;
   pink: string;
+  plain: string;
   poster: string;
   progressbar_mode: string;
   project: string;
@@ -66,6 +69,7 @@ export type Translations = {
   'ru-RU': string;
   screensaver_mode: string;
   share: string;
+  silver: string;
   solid: string;
   subtle: string;
   'sv-SE': string;

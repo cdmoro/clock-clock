@@ -1,3 +1,15 @@
 [data-theme|='golden'] {
     --accent-color: #DAA520;
+    --golden-gradient-colors: var(--accent-color) 45%, #f6f2c0 50%, #f6e27a 80%;
+}
+
+[data-theme|='golden'] .hands {
+    background-image: linear-gradient(0deg, var(--golden-gradient-colors));
+}
+
+[data-theme|='golden'] #clock .digit [data-hour="1"] .hours,
+[data-theme|='golden'] #clock .digit [data-minute="1"] .minutes,
+[data-theme|='golden'] #clock .digit [data-hour="4"] .hours,
+[data-theme|='golden'] #clock .digit [data-minute="4"] .minutes {
+    background-image: linear-gradient(180deg, var(--golden-gradient-colors));
 }
