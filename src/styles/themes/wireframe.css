@@ -1,0 +1,25 @@
+[data-theme|='wireframe'] #clock {
+    --hour-hand-color: var(--background);
+    --minute-hand-color: var(--background);
+    --half-hand-width: calc((var(--hand-height) / 2) + 1px);
+}
+
+[data-theme|='wireframe'] #clock .digit .mini-clock {
+    box-shadow: 0 0 2px 0 var(--accent-color);
+}
+
+[data-theme|='wireframe'] #clock .digit .mini-clock .hands {
+    border: var(--accent-color) solid 1px;
+    box-shadow: none;
+}
+
+[data-theme|='wireframe'] #clock .digit .mini-clock .center {
+    background: var(--accent-color);
+    width: 3px;
+    height: 3px;
+    z-index: 1;
+}
+
+[data-theme|='wireframe'] #clock .digit .mini-clock .shadow {
+    box-shadow: none;
+}
