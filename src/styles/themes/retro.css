@@ -2,6 +2,9 @@
   --clock-font-family: 'VT323', sans-serif;
   --clock-line-height: 1;
 }
+[data-theme|='retro'] #clock {
+  --seconds-color: #f73625;
+}
 
 [data-theme|='retro'] #clock .digit .mini-clock .hands {
   border-radius: .25rem 0 0 .25rem;

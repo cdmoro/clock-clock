@@ -43,8 +43,8 @@
 #clock .digit .mini-clock .center {
   background-color: var(--axis-background);
   border-radius: 50%;
-  width: var(--axis-width, 6px);
-  height: var(--axis-height, 6px);
+  width: var(--axis-width, .4vw);
+  height: var(--axis-height, .4vw);
   position: absolute;
   left: 50%;
   top: 50%;

@@ -3,21 +3,20 @@ body.seconds {
 }
 
 body.seconds #clock .digit:first-child .mini-clock:first-child .second {
-  height: 2px;
+  height: .15vw;
   width: 3.5vw;
   background: var(--seconds-color);
   position: absolute;
-  top: calc(50% - 1px);
-  left: calc(50% - 1px);
+  top: calc(50% - .1vw);
+  left: calc(50% - .1vw);
   transform: rotate(var(--seconds-rotate, -90deg));
-  transform-origin: 1px 1px;
+  transform-origin: .1vw .1vw;
 }
 
 body.seconds #clock .digit:first-child .mini-clock:first-child .center {
-  background: var(--seconds-color);
+  border: var(--seconds-color) solid .2vw;
+  background: var(--accent-color);
   border-radius: 50%;
-  width: var(--axis-width, 6px);
-  height: var(--axis-height, 6px);
   position: absolute;
   left: 50%;
   top: 50%;

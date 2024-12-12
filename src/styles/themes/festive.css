@@ -4,8 +4,13 @@
   --accent-color: #e74c3c;
 }
 
-[data-theme|='festive'][lang='ar'] {
-  --clock-font-family: 'Marhey', sans-serif;
+[data-theme|='festive'] .hands {
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-image:  linear-gradient(135deg, var(--background) 25%, transparent 25%), linear-gradient(225deg, var(--background) 25%, transparent 25%), linear-gradient(45deg, var(--background) 25%, transparent 25%), linear-gradient(315deg, var(--background) 25%, var(--accent-color) 25%);
+  background-position:  var(--hand-height) 0, var(--hand-height) 0, 0 0, 0 0;
+  background-size: var(--hand-height);
+  background-repeat: repeat;
 }
 
 [data-theme='festive-light'] {
