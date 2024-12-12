@@ -1,15 +1,29 @@
+body.seconds {
+  --seconds-color: orange;
+}
+
+body.seconds #clock .digit:first-child .mini-clock:first-child .second {
+  height: 2px;
+  width: 3.5vw;
+  background: var(--seconds-color);
+  position: absolute;
+  top: calc(50% - 1px);
+  left: calc(50% - 1px);
+  transform: rotate(var(--seconds-rotate, -90deg));
+  transform-origin: 1px 1px;
+}
+
 body.seconds #clock .digit:first-child .mini-clock:first-child .center {
-    z-index: 1;
-    background: orange;
-  }
-  
-  body.seconds #clock .digit:first-child .mini-clock:first-child .second {
-    height: 2px;
-    width: 40px;
-    background: orange;
-    position: absolute;
-    top: calc(50% - 1px);
-    left: calc(50% - 1px);
-    transform: rotate(0deg);
-    transform-origin: 1px 1px;
-  }
+  background: var(--seconds-color);
+  border-radius: 50%;
+  width: var(--axis-width, 6px);
+  height: var(--axis-height, 6px);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition:
+    transform 2s,
+    opacity 0.5s;
+  z-index: 2;
+}

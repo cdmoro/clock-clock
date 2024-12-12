@@ -1,5 +1,5 @@
 body.focus #clock .digit .inactive .hands,
-body.focus #clock .digit .inactive .center {
+body.focus:not(.seconds) #clock .digit .inactive .center {
   opacity: 0.03;
   box-shadow: none;
 }

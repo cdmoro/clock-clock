@@ -37,6 +37,7 @@
   height: var(--clock-size);
   position: absolute;
   border-radius: 50%;
+  z-index: 3;
 }
 
 #clock .digit .mini-clock .center {

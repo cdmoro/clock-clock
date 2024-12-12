@@ -113,7 +113,7 @@ function drawClock() {
       const miniClock = document.createElement('div');
       miniClock.className = 'mini-clock';
       miniClock.innerHTML =
-        '<div class="center"></div><div class="hands hours"></div><div class="hands minutes"></div><div class="second"></div><div class="shadow"></div>';
+        '<div class="center"></div><div class="hands hours"></div><div class="hands minutes"></div><div class="shadow"></div>';
       digit.append(miniClock);
     }
 

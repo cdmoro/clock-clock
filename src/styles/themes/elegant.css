@@ -1,11 +1,9 @@
 [data-theme|='elegant'] {
-  --clock-font-family: 'Playfair Display', sans-serif;
-  --clock-line-height: 1;
   --accent-color: #9f5bd5;
 }
 
-[data-theme|='elegant'][lang='ar'] {
-  --clock-font-family: 'Kufam', sans-serif;
+[data-theme|='elegant'] #clock {
+  --hand-height: .7vw;
 }
 
 [data-theme='elegant-light'] {
