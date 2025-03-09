@@ -1,6 +1,8 @@
 # Word O’Clock
 
+A clock made of clocks!
 
+![image](https://github.com/user-attachments/assets/4d1305c2-0c0b-4a3f-974a-b510b13ae031)
 
 ## Features
 
